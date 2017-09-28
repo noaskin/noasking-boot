@@ -1,0 +1,39 @@
+#数据源配置
+druid:
+  url: jdbc:mysql://192.168.1.102:3306/cloud-vue?useUnicode=true&characterEncoding=utf-8&useSSL=true
+  driver-class: com.mysql.jdbc.Driver
+  password: root
+  username: root
+  initial-size: 1
+  min-idle: 1
+  max-active: 20
+  test-on-borrow: true
+
+#mybaits配置
+mybatis:
+  type-aliases-package: com.noasking.mybatis.entity
+  mapper-locations: classpath:/mappers/**.xml
+  configuration:
+    cache-enabled: false
+    mapUnderscoreToCamelCase: true
+
+#通用Mapper配置
+mapper:
+  mappers: com.noasking.mybatis.utils.MyMapper
+  not-empty: true
+  identity: MYSQL
+
+#PageHelper配置
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+#日志等级配置
+logging:
+  level:
+    tk:
+      mybatis: TRACE
+    com:
+      framework: TRACE

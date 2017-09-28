@@ -1,0 +1,4 @@
+# Spring Profiles Active 代码环境配置
+spring:
+  profiles:
+    active: dev
