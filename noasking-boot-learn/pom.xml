@@ -19,6 +19,7 @@
         <module>noasking-boot-netty-server</module>
         <module>noasking-boot-netty-client</module>
         <module>noasking-boot-netty-common</module>
+        <module>noasking-boot-lombok</module>
     </modules>
 
     <artifactId>noasking-boot-learn</artifactId>

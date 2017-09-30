@@ -11,6 +11,7 @@
         <module>noasking-boot-muti</module>
         <module>noasking-boot-mybatis</module>
         <module>noasking-boot-learn</module>
+        <module>noasking-boot-server</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -41,6 +42,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.10</version>
         </dependency>
     </dependencies>
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jquery.js"></script>
+</head>
+<body>
+    dafawffffffffffffffffffffffffffffffffff
+</body>
+<script>
+    text();
+
+    function text() {
+        var url = "http://localhost:8080/sdm/mldesk/secondaryFiveElementRadio.do";
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            contentType: 'application/json'
+        }).done(function(result) {
+            console.log("success");
+            console.log(result);
+        }).fail(function() {
+            console.log("error");
+        })
+    }
+
+</script>
+</html>
